@@ -67,10 +67,10 @@ export default function Home() {
   return (
     <main>
       <Loader loadingStates={loadingStates} loading={loading} duration={1200} />  
-      <section className="flex justify-around items-center m-16 overflow-hidden">
-        <div className="w-[40%] h-screen border-2 border-sky-700 flex flex-col items-center">
-          <h1 className="text-5xl font-serif font-bold mt-4">Markdown Editor</h1>
-          <div className="grid grid-cols-5 gap-4 m-4">
+      <section className="flex justify-around items-center m-16 overflow-hidden max-[1100px]:flex-col">
+        <div className="w-[40%] h-screen border-2 border-sky-700 flex flex-col items-center max-[1100px]:w-[100%] max-[1100px]:mb-6 max-[1100px]:h-[600px]">
+          <h1 className="text-5xl font-serif font-bold mt-4 text-center max-[480px]:text-3xl">Markdown Editor</h1>
+          <div className="grid grid-cols-5 gap-4 m-4 max-[500px]:gap-2 max-[500px]:grid-cols-3">
             <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
               H1
             </button>
@@ -86,7 +86,7 @@ export default function Home() {
             <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
               H5
             </button>
-            <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+            <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 max-[500px]:hidden">
               H6
             </button>
             <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
@@ -111,13 +111,13 @@ export default function Home() {
             autoFocus
           >
           </textarea>
-          <div className="mt-6 flex flex-row gap-16 mb-4">
+          <div className="mt-6 flex flex-row gap-16 mb-4 max-sm:gap-2 max-md:gap-4 max-md:w-[175px] max-md:h-[90px]">
             <Button borderRadius="1.75rem" borderClassName="w-[100px] h-[40px] rounded-[25px]" onClick={handleCopy}>Copy</Button>
             <Button borderRadius="1.75rem" borderClassName="w-[100px] h-[40px] rounded-[25px]" onClick={handleDownload}>Download</Button>
           </div>
         </div>
-        <div className="w-[40%] h-screen border-2 border-sky-700 flex flex-col items-center">
-          <h1 className="text-5xl font-serif font-bold mt-4">Preview</h1>
+        <div className="w-[40%] h-screen border-2 border-sky-700 flex flex-col items-center max-[1100px]:w-[100%] max-[1100px]:h-[600px]">
+          <h1 className="text-5xl font-serif font-bold mt-4 max-[480px]:text-3xl">Preview</h1>
           <div className="w-[90%] h-[85%] m-4 text-xl font-sans overflow-auto rounded-md border-dotted outline-dotted outline-sky-700 border-sky-700 p-2">
             <ReactMarkdown>{textareaValue}</ReactMarkdown>
           </div>
