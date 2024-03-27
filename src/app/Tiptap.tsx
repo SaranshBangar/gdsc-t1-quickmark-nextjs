@@ -1,7 +1,6 @@
 'use client'
 import {  EditorProvider, useCurrentEditor } from '@tiptap/react'
 import StarterKit from '@tiptap/starter-kit'
-import { useEffect } from 'react'
 
 const MenuBar = ({setContent} : { setContent : any}) => {
     const { editor } = useCurrentEditor()
@@ -106,14 +105,13 @@ const extensions = [
   ]
 
 const content = `
-<p><b>This is bold</b></p>
-<p><i>This is italics</i></p>
-<p><s>This is strikethough</s></p>
-<p><code>This is a code block</code></p>
+<p><b>Avengers Assemble!</b></p>
+<p><i>Slenderman</i></p>
+<p><s>Cut me, baby, one more time</s></p>
+<p><code>Stark asked for a savior, and settled for a slave.</code></p>
 `
 
-export default function Tiptap ({setContent}:{setContent : any})  {
-  
+export default function Tiptap ({setContent}:{setContent : any}) {
     
   return (
     <div className='text-xl border-2 border-dotted border-sky-700 flex flex-col justify-center p-2 mb-4'>
@@ -122,4 +120,5 @@ export default function Tiptap ({setContent}:{setContent : any})  {
         </EditorProvider>
     </div>
   )
+  
 }

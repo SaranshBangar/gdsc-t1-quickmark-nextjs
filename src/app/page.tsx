@@ -18,7 +18,7 @@ const loadingStates = [
     text: "2nd year Software Engineering",
   },
   {
-    text: "Football fanatic and a boring tech guy",
+    text: "Football fanatic and a boring techie",
   },
   {
     text: "I don't have anything else to write 😅",
@@ -64,7 +64,7 @@ export default function Home() {
 
   return (
     <main>
-      {/* <Loader loadingStates={loadingStates} loading={loading} duration={1200} />   */}
+      <Loader loadingStates={loadingStates} loading={loading} duration={1200} />  
       <section className="h-auto flex justify-around items-center m-16 overflow-hidden max-[1100px]:flex-col">
         <div className="w-[100%] border-2 border-sky-700 flex flex-col items-center max-[1100px]:mb-6">
           <h1 className="text-5xl font-serif font-bold mt-4 text-center max-[480px]:text-3xl">Markdown Editor</h1>
