@@ -117,8 +117,8 @@ export default function Tiptap ({setContent}:{setContent : any})  {
     
   return (
     <div className='text-xl border-2 border-dotted border-sky-700 flex flex-col justify-center p-2 mb-4'>
-        <EditorProvider  slotBefore={<MenuBar setContent={setContent} />} extensions={extensions} content={content} children={undefined}>
-          
+        <EditorProvider  slotBefore={<MenuBar setContent={setContent} />} extensions={extensions} content={content}>
+          {undefined}
         </EditorProvider>
     </div>
   )
