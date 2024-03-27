@@ -31,3 +31,31 @@ body {
     text-wrap: balance;
   }
 }
+
+button {
+  width: 100px;
+  padding: 4px;
+  border: 2px solid rgb(3 105 161);
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+  button {
+    width: 80px;
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  button {
+    width: 60px;
+    font-size: 0.85rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  button {
+    width: 55px;
+    font-size: 0.85rem;
+  }
+}
