@@ -106,9 +106,10 @@ const extensions = [
   ]
 
 const content = `
-<h2>
-  Hello guys, hope you like my project :)
-</h2>
+<p><b>This is bold</b></p>
+<p><i>This is italics</i></p>
+<p><s>This is strikethough</s></p>
+<p><code>This is a code block</code></p>
 `
 
 export default function Tiptap ({setContent}:{setContent : any})  {
@@ -116,7 +117,9 @@ export default function Tiptap ({setContent}:{setContent : any})  {
     
   return (
     <div className='text-xl border-2 border-dotted border-sky-700 flex flex-col justify-center p-2 mb-4'>
-        <EditorProvider  slotBefore={<MenuBar setContent={setContent} />} extensions={extensions} content={content} children={undefined} />
+        <EditorProvider  slotBefore={<MenuBar setContent={setContent} />} extensions={extensions} content={content} children={undefined}>
+          
+        </EditorProvider>
     </div>
   )
 }
