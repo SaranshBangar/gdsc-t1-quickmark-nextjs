@@ -20,7 +20,7 @@ const MenuBar = ({setContent} : { setContent : any}) => {
             .toggleBold()
             .run()
         }
-        className={`hover:bg-sky-700 hover:text-white transition-all ease-in-out transition-250 ${editor.isActive('bold') ? 'is-active' : ''}`}>
+        className={`hover:bg-sky-700 hover:text-white transition-all ease-out ${editor.isActive('bold') ? 'is-active' : ''}`}>
         Bold
       </button>
       <button
