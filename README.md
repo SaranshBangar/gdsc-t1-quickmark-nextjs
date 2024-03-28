@@ -16,6 +16,6 @@ Welcome to our Markdown Editor and Previewr! This project was crafted for the re
 
 ## Screenshots
 
-- **Desktop** ![image](https://github.com/SaranshBangar/gdsc-t1-quickmark-nextjs/assets/114401238/bdae160a-fdaa-4b77-9e09-fe31b4162e70)
+- **Desktop** ![image](https://github.com/SaranshBangar/gdsc-t1-quickmark-nextjs/assets/114401238/cd2aca1b-aa5e-4ed8-8595-8e0a284aba83)
 - **Mobile**
-- ![WhatsApp Image 2024-03-27 at 23 12 07_d85c1f7b](https://github.com/SaranshBangar/gdsc-t1-quickmark-nextjs/assets/114401238/6400712f-dc93-47c6-828a-ca7c9db700de)
+- ![WhatsApp Image 2024-03-28 at 22 11 29_f189aea2](https://github.com/SaranshBangar/gdsc-t1-quickmark-nextjs/assets/114401238/47f13926-ea7a-43f7-9995-75abc113e77a)
